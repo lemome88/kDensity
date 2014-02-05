@@ -2,9 +2,10 @@
 ## PRUEBAS DE LA VERSION 1 DEL SCRIPT BASE ##
 #############################################
 #Carga del script
-source("Base_version_1.R")
+source("dataRead_module.R")
+source("kdensity_module.R")
 #Generacion de muestras aleatorias (usando una distribucion beta)
-muestra<-rbeta(10,2,200)
+muestra<-random.beta()
 muestra
 
 #Generacion de la estimacion basada en el kernel triangular
@@ -15,13 +16,16 @@ plot.kernel(triang.density)
 #Calculo del area (siempre deberia ser 1)
 numeric.integral(triang.density)
 
+
+
+##################################
 #Lo mismo con el kernel gausiano
-gauss.density<-kdensity(sample=muestra,method="gauss",n=200,b=0.0025)
+##gauss.density<-kdensity(sample=muestra,method="gauss",n=200,b=0.0025)
 #Representacion grafica
-x11()
-plot.kernel(gauss.density)
+##x11()
+##plot.kernel(gauss.density)
 #Calculo del area (siempre deberia ser 1)
-numeric.integral(gauss.density)
+##numeric.integral(gauss.density)
 
 
 ######################
