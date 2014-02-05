@@ -1,5 +1,5 @@
 #############################################
-## PRUEBAS DE LA VERSION 1 DEL SCRIPT BASE ##
+## USE CASE DEL MODULO INICIAL SOLO CON EL KERNEL TRIANDULAR Y GAUSS##
 #############################################
 #Carga del script
 source("dataRead_module.R")
