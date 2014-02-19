@@ -43,7 +43,15 @@ numeric.integral<-function(data){
   sum(dx*dy)
 }
 
+
+##
+
 ##Representacion grafica
 plot.kernel<-function (data,col="red"){
   plot(data,main="Kernel density estimation",xlab="X",ylab="Density",col=col,type="l",lwd=2)
 }
+
+
+
+##start of the program
+df<-
