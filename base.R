@@ -55,7 +55,7 @@ plot.kernel<-function (data,col="red"){
 
 ##start of the program
 #Generacion de muestras aleatorias (usando una distribucion beta)
-muestra<-random.beta()
+muestra<-rbeta(10,2,200)
 muestra
 
 #Generacion de la estimacion basada en el kernel triangular
